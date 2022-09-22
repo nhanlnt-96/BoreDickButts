@@ -5,7 +5,7 @@ import { aboutData } from "../../configs";
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen bg-bdb-red-variant flex justify-center items-center">
+    <div className="w-full min-h-screen bg-bdb-red-variant flex justify-center items-center p-4">
       <Container className="h-full flex flex-col space-y-8 lg:space-y-0 lg:space-x-2 lg:flex-row justify-center items-center">
         <div className="w-full lg:w-1/2 space-y-8 flex flex-col justify-center items-center">
           <h6 className="font-bold text-3xl sm:text-5xl">What Is giigsh?</h6>
@@ -16,7 +16,7 @@ const About = () => {
               </svg>
             </div>
             <div
-              className="w-64 absolute left-1/2 top-1/2"
+              className="w-32 md:w-64 absolute left-1/2 top-1/2"
               style={{ transform: "translate(-50%, -50%)" }}
             >
               <img

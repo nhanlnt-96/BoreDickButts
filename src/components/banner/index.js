@@ -32,7 +32,7 @@ const Banner = () => {
       {blockchain.errorMsg && (
         <Notification notification={blockchain.errorMsg} />
       )}
-      <Container className="h-full banner-container">
+      <Container className="h-full py-4 banner-container">
         <div
           ref={headerRef}
           className="w-full flex space-x-3.5 justify-start items-center p-3 banner-header"
