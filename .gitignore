@@ -144,3 +144,8 @@ dist
 #IDE
 .idea
 .vscode
+
+# firebase
+.firebase
+.firebaserc
+firebase.json
