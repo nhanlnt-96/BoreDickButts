@@ -1,49 +1,78 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  padding: 10px;
-  border-radius: 50px;
-  border: none;
-  background-color: var(--secondary);
-  padding: 10px;
-  font-weight: bold;
-  color: var(--secondary-text);
-  width: 100px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #eb3941,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
 
-  :active {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
+  &:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
 
 export const StyledRoundButton = styled.button`
-  padding: 10px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
-  border: none;
-  background-color: var(--primary);
-  padding: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  color: var(--primary-text);
-  width: 30px;
-  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 0px -2px rgba(250, 250, 250, 0.3);
-  -webkit-box-shadow: 0px 4px 0px -2px rgba(250, 250, 250, 0.3);
-  -moz-box-shadow: 0px 4px 0px -2px rgba(250, 250, 250, 0.3);
+  margin: 20px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #ed6ea0,
+    #ec8c69,
+    #f7186a,
+    #fbb03b
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 
-  :active {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
+  &:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
 
@@ -57,30 +86,6 @@ export const ResponsiveWrapper = styled.div`
   @media (min-width: 767px) {
     flex-direction: row;
   }
-`;
-
-export const StyledLogo = styled.img`
-  width: 200px;
-  @media (min-width: 767px) {
-    width: 300px;
-  }
-  transition: width 0.5s;
-  transition: height 0.5s;
-`;
-
-export const StyledImg = styled.img`
-  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
-  background-color: var(--accent);
-  border-radius: 100%;
-  width: 200px;
-  @media (min-width: 900px) {
-    width: 250px;
-  }
-  @media (min-width: 1000px) {
-    width: 300px;
-  }
-  transition: width 0.5s;
 `;
 
 export const StyledLink = styled.a`

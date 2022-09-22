@@ -1,0 +1,65 @@
+@import "../../styles/rwd";
+
+.banner {
+  &-left {
+    &__button {
+      width: 200px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+
+      &.button-color {
+        background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+        box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+      }
+
+      &:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &-right {
+    &__shape {
+      &-red, &-white {
+        top: 50%;
+        left: 70%;
+        transform: translate(-70%, -50%) rotate(45deg);
+      }
+
+      &-red {
+        z-index: 1;
+        left: 40%;
+        @include lg {
+          top: 45%;
+          left: 30%;
+          transform: translate(-35%, -50%) rotate(45deg);
+        }
+        @include xl {
+          left: 30%;
+          top: 40%;
+          transform: translate(-30%, -40%) rotate(45deg);
+        }
+      }
+    }
+  }
+}

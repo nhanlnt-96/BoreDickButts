@@ -1,12 +1,8 @@
 import React from "react";
-import MintBox from "./components/mintBox";
+import MainLayout from "./components/mainLayout";
 
 function App() {
-
-
-    return (
-        <MintBox/>
-    );
+  return <MainLayout />;
 }
 
 export default App;
