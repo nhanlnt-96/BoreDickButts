@@ -27,6 +27,8 @@ module.exports = {
       pink: colors.pink,
       "bdb-purple": "#762fcf",
       "bdb-red": "#f14929",
+      "bdb-red-variant": "#f44926",
+      "bdb-yellow-dark": "#f9b850",
     },
     spacing: {
       px: "1px",
