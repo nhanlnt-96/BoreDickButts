@@ -7,7 +7,11 @@ const About = () => {
   return (
     <div className="w-full min-h-screen bg-bdb-red-variant flex justify-center items-center p-4">
       <Container className="h-full flex flex-col space-y-8 lg:space-y-0 lg:space-x-2 lg:flex-row justify-center items-center">
-        <div className="w-full lg:w-1/2 space-y-8 flex flex-col justify-center items-center">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          className="w-full lg:w-1/2 space-y-8 flex flex-col justify-center items-center"
+        >
           <h6 className="font-bold text-3xl sm:text-5xl">What Is giigsh?</h6>
           <div className="w-full relative flex justify-center items-center">
             <div className="text-white w-40 md:w-80 xl:w-96 h-auto">
@@ -30,6 +34,9 @@ const About = () => {
         <div className="w-full lg:w-1/2 space-y-3 sm:space-y-6">
           {aboutData.map((item, index) => (
             <div
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration={500 * (aboutData.length - 1)}
               key={index}
               className="shadow-bdb-shadow rounded-md bg-bdb-purple py-3 px-6 space-y-2"
             >

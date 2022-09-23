@@ -11,6 +11,8 @@ const QA = () => {
         {qaData.map((item, index) => (
           <div className="w-full space-y-4">
             <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
               className="w-full relative flex justify-center items-center px-10 py-3"
               style={{ minHeight: "100px" }}
             >
@@ -27,6 +29,8 @@ const QA = () => {
               </p>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
               className="w-full relative flex justify-center items-center px-10 py-3"
               style={{ minHeight: "100px" }}
             >
