@@ -11,6 +11,8 @@ const Team = () => {
       <Container className="w-full">
         <div className="w-full flex flex-col space-y-8 justify-center items-center">
           <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
             className="bg-white max-w-sm w-full rounded border border-black"
             style={{
               boxShadow: "rgba(0, 0, 0, 1) 5px 5px",
@@ -35,6 +37,8 @@ const Team = () => {
           <div className="flex flex-wrap justify-center items-center gap-8">
             {teamData.map((item, index) => (
               <div
+                data-aos="zoom-in"
+                data-aos-duration="1000"
                 key={index}
                 className="w-full lg:w-1/4 px-2 py-10 border-2 border-black rounded-md bg-white text-center"
                 style={{

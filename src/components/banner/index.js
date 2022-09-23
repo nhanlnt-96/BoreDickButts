@@ -34,6 +34,8 @@ const Banner = () => {
       )}
       <Container className="h-full py-4 banner-container">
         <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
           ref={headerRef}
           className="w-full flex space-x-3.5 justify-start items-center p-3 banner-header"
         >
@@ -46,7 +48,11 @@ const Banner = () => {
             minHeight: `calc(100vh - ${headerHeight}px)`,
           }}
         >
-          <div className="w-full lg:w-1/2 flex justify-center items-center flex-col space-y-8 md:space-y-16 banner-left">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="w-full lg:w-1/2 flex justify-center items-center flex-col space-y-8 md:space-y-16 banner-left"
+          >
             <div className="text-center text-xl lg:text-2xl space-y-3">
               <p>Boredickbutts is derivatives BAYC and CryptoDickButts</p>
               <p>8888 3d DDB to help launch pay and get paid in crypto.</p>
@@ -69,7 +75,11 @@ const Banner = () => {
               )}
             </div>
           </div>
-          <div className="w-full lg:w-1/2 banner-right">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="w-full lg:w-1/2 banner-right"
+          >
             <div className="w-full relative h-full banner-right__container">
               <div className="text-bdb-red w-40 md:w-80 xl:w-96 h-auto absolute banner-right__shape-red">
                 <svg viewBox="0 0 500 444.61" fill="currentColor">
